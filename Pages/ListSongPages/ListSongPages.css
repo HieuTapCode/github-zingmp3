@@ -1,0 +1,376 @@
+#display-main {
+  width: 100%;
+  height: 100%;
+  background-image: url(https://zmp3-static.zmdcdn.me/skins/zmp3-v6.1/images/theme-background/zma.svg);
+  display: flex;
+}
+
+#display-main #navbar-main .login-vip--container {
+  bottom: 100px;
+}
+
+.right-container {
+  width: calc(100% - 220px);
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 16px 2% 60px;
+}
+/* container-right-content */
+.content-container {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+}
+.content-container-left {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+.content-container .content-container-left .avt-disk-play {
+  border-radius: 5px;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  position: relative;
+  border: 4px solid white;
+  flex: 3;
+  box-shadow: 0 0 20px #000;
+}
+
+.zing-recommend--item i.fa-solid.fa-crown {
+  color: gold;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 12px;
+  filter: drop-shadow(2px 4px 6px black);
+  z-index: 10;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.content-container .content-container-left .avt-disk-play.spin {
+  transition: all 0.5s ease-in-out;
+  border-radius: 50%;
+  animation: spin 10s linear infinite;
+}
+
+@keyframes blur {
+  0% {
+    filter: blur(5px);
+  }
+  100% {
+    filter: blur(0);
+  }
+}
+
+.content-container .content-container-left .avt-disk-play img {
+  animation: blur 4s ease; /* Thêm hiệu ứng chuyển đổi mượt mà */
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.media-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px 0;
+  flex: 1;
+}
+.content-top {
+  text-align: center;
+  width: 100%;
+}
+.content-top .title {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 0px;
+  text-transform: capitalize;
+}
+
+.like {
+  display: flex;
+  justify-content: center;
+  margin: 0 -10px;
+}
+.like p {
+  padding: 5px 10px;
+}
+
+.title,
+.release,
+.artists a,
+.artists span,
+.like {
+  font-size: 12px;
+  color: hsla(0, 0%, 100%, 0.5);
+}
+.content-top .artists {
+  margin: 5px;
+}
+.actions {
+  margin-top: 16px;
+}
+.actions .btn-play-all {
+  background-color: #ed2b91;
+  border-color: #ed2b91;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 999px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.media-content .actions .fa-play {
+  margin-right: 5px;
+}
+.media_right {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #fff;
+}
+.media_right-btn {
+  padding: 10px;
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+.media_right-btn:hover {
+  background-color: hsla(0, 0%, 100%, 0.3);
+}
+
+/* danh sach bai hat */
+
+.content-container-right {
+  color: #fff;
+  flex: 7;
+  margin-left: 30px;
+}
+.content-container-right .description {
+  margin: 0 0 15px;
+}
+.content-container-right span {
+  color: hsla(0, 0%, 100%, 0.5);
+}
+
+.list-recommend {
+  width: 100%;
+  height: calc(70.8px * 5);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.zing-recommend--item {
+  width: 100%;
+  margin-left: 10px;
+  align-items: center;
+  background: none;
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+  font-size: 14px;
+}
+
+h3.errorAuth{
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: blanchedalmond;
+  text-align: center;
+  font-weight:500;
+}
+
+h3.errorAuth a{
+  color: blue;
+  font-weight: 600;
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+.zing-recommend--item:not(.zing-recommend--item.zing-recommend--title):hover,
+.zing-recommend--item:not(.zing-recommend--item.zing-recommend--title).active {
+  background-color: hsla(0, 0%, 100%, 0.5);
+}
+
+.zing-recommend--item:not(.zing-recommend--item.zing-recommend--title).active
+  .wave_music {
+  display: block;
+}
+
+.wave_music {
+  display: none;
+}
+
+.zing-recommend--item-left,
+.zing-recommend--item-center,
+.zing-recommend--item-right {
+  color: hsla(0, 0%, 100%, 0.5);
+}
+.zing-recommend--item-left {
+  flex: 6;
+  display: flex;
+  align-items: center;
+}
+.zing-recommend--item-center {
+  font-size: 13px;
+  flex: 2;
+  text-align: start;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.zing-recommend--item-center.mobile {
+  display: none;
+}
+
+.zing-recommend--item-center i {
+  margin-right: 5px;
+  font-size: 18px;
+}
+.zing-recommend--item-right {
+  font-size: 12px;
+  flex: 1;
+  text-align: end;
+  padding-right: 10px;
+}
+
+.zing-recommend--item-text {
+  flex: 5;
+  align-self: start;
+}
+.img-avt-infor {
+  border-radius: 3px;
+  width: 70px;
+  height: 50px;
+  flex: 1;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.img-avt-infor img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.name-song {
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.name-single {
+  font-size: 12px;
+}
+
+/* CSS cho tablet (độ rộng màn hình từ 768px đến 1024px) */
+@media (max-width: 1024px) {
+  .right-container {
+    width: 100%;
+  }
+  .like {
+    justify-content: center;
+  }
+
+  .content-container-right .description {
+    margin: 0 15px;
+  }
+
+  .content-container-left {
+    width: 100%;
+    display: flex;
+  }
+
+  .media-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .content-top {
+    text-align: center;
+  }
+
+  .media-content .actions {
+    margin-top: 25px;
+  }
+  .content-top .artists {
+    margin: 5px 5px 5px 0;
+  }
+
+  .content-container-right {
+    margin-left: 0;
+    flex: 4;
+  }
+
+  .zing-recommend--item-center.mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .zing-recommend--item {
+    margin: 0;
+  }
+  .zing-recommend--item-center {
+    display: none;
+  }
+
+  .zing-recommend--item-center.mobile {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .zing-recommend--item-center.mobile span {
+    padding: 5px 10px 0 0;
+    font-size: 0.7rem;
+  }
+
+  .zing-recommend--item-center.mobile i {
+    padding-left: 2px;
+  }
+
+  .zing-recommend--item-text {
+    flex: 3;
+    align-self: start;
+  }
+
+  .content-container .content-container-left .avt-disk-play {
+    width: 55vw;
+    align-self: center;
+  }
+  .like {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .content-container-right .description {
+    margin: 0;
+  }
+
+  .list-recommend {
+    width: 100%;
+    height: 100%;
+  }
+}

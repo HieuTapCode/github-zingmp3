@@ -1,0 +1,225 @@
+#topsong-main {
+  width: 100vw;
+  height: fit-content;
+  min-height: 100vh;
+  background-image: url("https://zmp3-static.zmdcdn.me/skins/zmp3-v6.1/images/theme-background/zma.svg");
+  display: flex;
+}
+
+#topsong-main #topsong-right {
+  width: calc(100vw - 220px);
+  height: 100vh;
+  overflow-y: auto;
+  padding: 16px 2% 60px;
+  color: #ffffff;
+}
+
+.header-titlepage {
+  display: flex;
+  align-items: center;
+  margin: 0 0 20px;
+}
+
+.header-titlepage .control {
+  width: 52px;
+  display: flex;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+.header-titlepage .icon-play {
+  position: relative;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #9b4de0;
+  cursor: pointer;
+  border: none;
+  z-index: 51;
+  padding: 2px 0 0 2px;
+}
+
+.icon-play .fa-play {
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+}
+
+.header-titlepage .icon-play:hover {
+  background: #fff;
+}
+
+.header-titlepage .icon-play:hover .fa-play {
+  color: #9b4de0;
+}
+
+/* TOP Songs  */
+
+h1.title-item--home {
+  margin: 15px 0 10px;
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.content-layout {
+  color: #ffffff;
+  margin: 60px 0;
+}
+
+.content-layout ul.topsong-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: left;
+  justify-content: left;
+}
+
+.content-layout ul.topsong-list a {
+  align-items: center;
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
+  border-radius: 5px;
+  display: flex;
+  min-width: 100%;
+}
+
+.content-layout ul.topsong-list i.fa-solid.fa-crown {
+  color: gold;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 12px;
+  filter: drop-shadow(2px 4px 6px black);
+  z-index: 10;
+}
+
+.content-layout ul.topsong-list a li.topsong-list--item {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.06);
+}
+.content-layout ul.topsong-list a li.topsong-list--item span {
+  display: flex;
+  align-items: center;
+}
+.content-layout ul.topsong-list a:hover li.topsong-list--item {
+  background-color: hsla(0, 0%, 100%, 0.2);
+}
+
+.content-layout ul.topsong-list a li.topsong-list--item .song-info {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.song-info i.fa-circle-play {
+  display: none;
+  position: absolute;
+  font-size: 25px;
+  top: calc(50% - (24px / 2));
+  left: calc(50% - (25px / 2));
+}
+
+.content-layout
+  ul.topsong-list
+  a:hover
+  li.topsong-list--item
+  .song-info
+  i.fa-circle-play {
+  display: block;
+}
+
+.content-layout ul.topsong-list a:hover li.topsong-list--item .song-info img {
+  filter: brightness(0.5);
+}
+
+.song-info .img-thumbnail {
+  cursor: pointer;
+  height: 60px;
+  width: 90px;
+  overflow: hidden;
+  margin-right: 6px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.song-info .img-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.song-info .name-song {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 4px;
+  text-transform: none;
+}
+
+.song-info .author-song,
+.song-info .heart-quantity {
+  font-size: 11px;
+  color: #8f8b95;
+  padding: 1px 4px;
+}
+
+.topsong-list--item p.song-duration {
+  color: #8f8b95;
+  font-size: 11px;
+  font-weight: 500;
+  margin: 0 10px;
+}
+
+.playListSong-numbersong-dash {
+  height: 37px;
+  width: 37px;
+  padding: 10px 0;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.playListSong-numbersong-dash span {
+  -webkit-text-stroke: 1.5px #fff;
+  color: rgba(74, 144, 226, 0);
+  display: flex;
+  padding: 0 11px 0 0;
+  font-size: 30px !important;
+  font-weight: 600;
+  justify-content: center;
+  opacity: 0.7;
+}
+
+.topsong-list a:nth-child(1) .playListSong-numbersong-dash span {
+  -webkit-text-stroke-color: #aaff00 !important;
+}
+
+.topsong-list a:nth-child(2) .playListSong-numbersong-dash span {
+  -webkit-text-stroke-color: #0fe954 !important;
+}
+
+.topsong-list a:nth-child(3) .playListSong-numbersong-dash span {
+  -webkit-text-stroke-color: #4a90e2 !important;
+}
+
+@media (max-width: 1024px) {
+  #topsong-main #topsong-right {
+    width: 100%;
+  }
+  .right.topsong {
+    width: 100%;
+  }
+  .topsong-main .content-layout {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .topsong-list--item p.song-duration {
+    display: none;
+  }
+}

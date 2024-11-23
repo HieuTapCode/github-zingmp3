@@ -1,0 +1,141 @@
+/* NAVBAR  */
+#navbar-main {
+  width: 220px;
+  min-height: 100vh;
+  background-color: hsla(0, 0%, 100%, 0.05);
+  color: #d9d0e0;
+  padding: 20px 0;
+}
+
+/* LOGO  */
+#navbar-main .logo-main {
+  margin: 0 10%;
+}
+
+#navbar-main .logo-main img {
+  width: 100%;
+  object-fit: cover;
+}
+
+#navbar-main ul.list-menu {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#navbar-main ul.list-menu a {
+  font-size: 15px;
+}
+
+#navbar-main ul.list-menu a li {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  font-weight: 700;
+}
+
+#navbar-main ul.list-menu a li.active {
+  /*Sự kiện active vào 1 thẻ li*/
+  border-left: 4px solid #9b4de0;
+  background-color: hsla(0, 0%, 100%, 0.1);
+}
+
+#navbar-main ul.list-menu a:hover li {
+  color: #d44ecb;
+  margin-left: 4px; /*hiệu ứng dịch sang trái khi hover*/
+  transition: 0.3s linear;
+}
+
+#navbar-main ul.list-menu a li i {
+  min-width: 32px;
+  padding-right: 10px;
+}
+
+/* LOGIN-VIP */
+#navbar-main .login-vip--container {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: inherit;
+  padding: 10px;
+}
+#navbar-main .login-vip--container .login-update--vip {
+  border-radius: 8px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.35);
+  padding: 10px;
+  background-image: linear-gradient(117deg, #5a4be7, #c86dd7 102%);
+}
+
+#navbar-main .login-vip--container .login-update--vip p {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #ffffff;
+}
+
+#navbar-main .login-vip--container .login-update--vip button {
+  background-color: #ffdb00;
+  border: none;
+  border-radius: 20px;
+  color: #312f24;
+  cursor: pointer;
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  margin: auto;
+  outline: none;
+  padding: 8px 0;
+  text-transform: uppercase;
+  transition: 0.2s ease-in;
+  width: 90%;
+}
+
+#navbar-main .login-vip--container .login-update--vip i {
+  display: none;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1024px) {
+  #navbar-main,
+  #navbar-main ul.list-menu a,
+  #navbar-main ul.list-menu a li,
+  #navbar-main ul.list-menu {
+    width: fit-content;
+    width: -moz-fit-content;
+  }
+
+  #navbar-main ul.list-menu a {
+    font-size: 18px;
+  }
+
+  #navbar-main ul.list-menu a li p {
+    display: none;
+  }
+
+  #navbar-main ul.list-menu a li i {
+    min-width: unset;
+    padding-right: 0;
+  }
+
+  #navbar-main .logo-main img {
+    display: none;
+  }
+
+  #navbar-main .logo-main {
+    height: 40px;
+    background: url("../assets/logo_mobile.png") center / contain no-repeat;
+  }
+
+  #navbar-main .login-vip--container .login-update--vip p,
+  #navbar-main .login-vip--container .login-update--vip button {
+    display: none;
+  }
+
+
+  #navbar-main .login-vip--container .login-update--vip i {
+    display: block;
+  }
+}

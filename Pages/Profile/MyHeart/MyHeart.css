@@ -1,0 +1,107 @@
+/* My_heart  */
+
+.profile-content ul.list-my--heart a li.item-my--heart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: hsla(0, 0%, 100%, 0.3);
+  margin: 10px 0;
+}
+
+.profile-content ul.list-my--heart a:hover li.item-my--heart {
+  background-color: hsla(0, 0%, 100%, 0.2);
+}
+
+
+
+.profile-content ul.list-my--heart a li.item-my--heart .song-info {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.song-info i.btn-play {
+  display: none;
+  position: absolute;
+  font-size: 25px;
+  top: calc(50% - (25px / 2));
+  left: calc(50% - (25px / 2));
+}
+
+.profile-content ul.list-my--heart a:hover li.item-my--heart .song-info i.btn-play {
+  display: block;
+}
+
+.profile-content ul.list-my--heart a:hover li.item-my--heart .song-info img {
+  filter: brightness(0.5);
+}
+
+.song-info .img-thumbnail {
+  cursor: pointer;
+  height: 60px;
+  width: 90px;
+  margin-right: 6px;
+  position: relative;
+}
+
+.song-info .img-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.song-info .name-song {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 4px;
+  text-transform: none;
+  
+}
+
+
+.song-info .author-song,
+.song-info .heart-quantity {
+  font-size: 11px;
+  color: #cccccc;
+  padding: 1px 4px;
+}
+
+.item-my--heart span {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.item-my--heart span i {
+  position: absolute;
+  z-index: 12;
+  left: -40%;
+}
+
+.item-my--heart p.song-duration {
+  color: #cccccc;
+  font-size: 11px;
+  font-weight: 500;
+  margin: 0 10px;
+}
+
+.item-my--heart i.fa-solid.fa-crown {
+  color: gold;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 12px;
+  filter: drop-shadow(2px 4px 6px black);
+  z-index: 10;
+}
+
+
+@media (max-width: 600px) {
+  .profile-content ul.list-my--heart a {
+    width: calc(100% / 1);
+  }
+}

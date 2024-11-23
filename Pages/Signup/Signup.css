@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+.signup-container {
+  width: 100vw;
+  min-height: 100vh;
+  background: url("../../Component/assets/bg.svg");
+  color: #ffffff;
+  display: flex;
+}
+
+.signup-container img {
+  width: 50%;
+  margin: 20px auto;
+}
+
+.icon-home {
+  background-color: #561a88;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  border: 2px solid;
+  right: 10px;
+  width: 50px;
+  z-index: 1000;
+  height: 50px;
+  padding: 11px;
+  font-size: 22px;
+}
+
+.icon-home:hover {
+  background-color: #35075b;
+}
+
+.singleMessage {
+  margin: 5px 0;
+  padding: 5px;
+  width: 100%;
+  text-align: center;
+  color: red;
+  font-size: 18px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  width: 400px;
+  height: fit-content;
+  background-color: rgba(255, 255, 255, 0.13);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  padding: 10px 30px;
+}
+
+form h3 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #ffffff;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  align-self: flex-start;
+}
+
+input {
+  display: block;
+  height: 50px;
+  width: 100%;
+  color: rgba(0, 0, 0);
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 0 10px;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+button {
+  margin-top: 30px;
+  width: 100%;
+  background-color: #09ceff;
+  color: #35075b;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3498db;
+}
+
+button:active {
+  scale: 0.95;
+}
+
+.direct-login {
+  font-size: 14px;
+  padding: 20px;
+  padding-bottom: 0px;
+}
+
+.direct-login a {
+  color: #09ceff;
+}
+
+.direct-login a:hover {
+  text-decoration: underline;
+}

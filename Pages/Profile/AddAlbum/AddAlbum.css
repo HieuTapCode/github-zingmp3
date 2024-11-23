@@ -1,0 +1,96 @@
+#add-album--main {
+  width: 100vw;
+  height: fit-content;
+  min-height: 100vh;
+  background-image: url("https://zmp3-static.zmdcdn.me/skins/zmp3-v6.1/images/theme-background/zma.svg");
+  display: flex;
+}
+
+#add-album--main .add-album--right {
+  width: calc(100vw - 220px);
+  height: 100vh;
+  overflow-y: auto;
+  padding: 16px 2% 0;
+  color: #ffffff;
+}
+
+#add-album--main .add-album--container {
+  background-color: hsla(0, 0%, 100%, 0.2);
+  max-width: 500px;
+  margin: 10px auto 20px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#add-album--main h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+#add-album--main .form-group {
+  margin-bottom: 15px;
+  font-size: 13px;
+}
+
+
+
+
+#add-album--main button.turn-back{
+  background-color: #138c25;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#add-album--main label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#add-album--main input[type="text"],
+#add-album--main input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+#add-album--main .img-preview {
+  width: fit-content;
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 3px dotted #b8e122;
+ margin: auto;
+  
+}
+
+#add-album--main .img-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+#add-album--main input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#add-album--main input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 1024px) {
+  #add-album--main .add-album--right {
+    margin: auto;
+    width: -webkit-fill-available;
+  }
+}

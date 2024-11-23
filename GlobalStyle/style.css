@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+/* Reset CSS  */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  white-space: nowrap; /* Ngăn chữ tràn qua dòng */
+  overflow: hidden; /* Ẩn phần dư thừa */
+  text-overflow: ellipsis; /* Hiển thị dấu ba chấm (...) khi vượt quá phạm vi */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+div {
+  font-family: "Inter", sans-serif;
+  color: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: #37075d;
+}
+
+*::-webkit-scrollbar {
+  width: 7px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #411465;
+  border: 2px solid #464343;
+}
+
+h3 {
+  padding: 4px 0;
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
+}
+
+h1 {
+  text-transform: uppercase !important;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.img-thumbnail,
+.playListSong-item-img {
+  width: 90px !important;
+}
+@media (min-width: 769px) and (max-width: 1024) {
+  .song-info .info-song {
+    max-width: 400px;
+  }
+
+  .img-thumbnail,
+  .playListSong-item-img {
+    width: 70px !important;
+  }
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  span i,
+  div,
+  span {
+    font-size: 0.9rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .song-info .info-song {
+    max-width: 150px;
+  }
+  .img-thumbnail,
+  .playListSong-item-img {
+    width: 60px !important;
+  }
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  span i,
+  div,
+  span {
+    font-size: 0.7rem !important;
+  }
+}

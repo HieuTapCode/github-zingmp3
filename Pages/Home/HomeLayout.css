@@ -1,0 +1,38 @@
+#home-main {
+  width: 100vw;
+  height: fit-content;
+  min-height: 100vh;
+  background-image: url("https://zmp3-static.zmdcdn.me/skins/zmp3-v6.1/images/theme-background/zma.svg");
+  display: flex;
+}
+
+#home-main .home-right {
+  width: calc(100vw - 220px);
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 16px 2%;
+  color: #ffffff;
+}
+
+
+@media (max-width: 1024px) {
+  #home-main .home-right {
+    width: fit-content;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+  .trending-author .trending-author--list a {
+    width: calc(100% / 4);
+  }
+}
+
+@media (max-width: 600px) {
+  .trending-author .trending-author--list a {
+    width: calc(100% / 2);
+  }
+  .trending-container ul.trending-list a {
+    width: calc(100% / 1);
+  }
+}

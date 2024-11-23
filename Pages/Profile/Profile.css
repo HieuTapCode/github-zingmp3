@@ -1,0 +1,118 @@
+#profile-main {
+  width: 100vw;
+  height: fit-content;
+  min-height: 100vh;
+  background-image: url("https://zmp3-static.zmdcdn.me/skins/zmp3-v6.1/images/theme-background/zma.svg");
+  display: flex;
+}
+
+#profile-main .profile-right {
+  width: calc(100vw - 220px);
+  height: 100vh;
+  overflow-y: auto;
+  padding: 16px 2% 60px;
+  color: #ffffff;
+}
+
+#profile-main .profile-right .container-profile {
+  padding: 40px 0 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#profile-main .profile-right .container-profile .profile-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#profile-main .profile-right .container-profile .profile-header .img-container {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 2px solid white;
+  overflow: hidden;
+}
+
+#profile-main .profile-right .container-profile .profile-header .img-container img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+#profile-main .profile-right .container-profile .profile-header .profile-name {
+  font-weight: 900;
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+#profile-main .profile-navbar {
+  margin: 20px 0 0;
+  display: flex;
+  align-items: center;
+  background-color: hsla(0, 0%, 100%, 0.1);
+  border-radius: 20px;
+}
+
+#profile-main .profile-navbar a {
+  margin: 4px;
+}
+
+#profile-main .profile-navbar a li {
+  padding: 7px 25px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+#profile-main .profile-navbar a li.active {
+  background-color: hsla(0, 0%, 100%, 0.3);
+}
+
+/* Content  */
+.profile-content {
+  width: 70%;
+  margin: auto;
+}
+
+.img-container {
+  position: relative;
+}
+
+.img-container i.fa-solid.fa-crown {
+  position: absolute;
+  left: 50%;
+  bottom: 5px;
+  color: gold;
+  font-size: 25px;
+  transform: translateX(-50%);
+}
+
+a .buy-vip {
+  border: 1px solid;
+  padding: 4px 11px;
+  font-size: 12px;
+  border-radius: 10px;
+  margin: 10px 0 0;
+}
+
+a:hover .buy-vip {
+  background-color: white;
+  color: blueviolet;
+}
+
+@media (max-width: 1023px) {
+  #profile-main .profile-right {
+    width: -webkit-fill-available;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .profile-content {
+    width: 100%;
+    margin: 0;
+  }
+}

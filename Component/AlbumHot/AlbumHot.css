@@ -1,0 +1,82 @@
+/* Trending album  */
+
+.trending-album {
+  margin: 60px 0;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.trending-album .trending-album--list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
+.trending-album .trending-album--list a {
+  position: relative;
+  width: calc(100% / 5);
+  overflow: hidden;
+  padding: 10px;
+}
+.trending-album .trending-album--list i {
+  display: none;
+  font-size: 50px;
+  position: absolute;
+  top: calc(50% - 50px);
+  left: calc(50% - (50px / 2));
+  z-index: 10;
+}
+
+.trending-album .trending-album--list a li {
+  border-radius: 4px;
+  border: 2px solid #ffffff;
+  overflow: hidden;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.trending-album .trending-album--list a li img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.trending-album .trending-album--list a:hover i {
+  display: inline;
+}
+.trending-album .trending-album--list a:hover li img {
+  transform: scale(1.2);
+  transition: all 0.8s ease-in-out;
+  filter: brightness(0.5);
+}
+
+.trending-album .trending-album--list a p {
+  font-size: 14px;
+  text-align: center;
+}
+
+.trending-album .trending-album--list a p.title-album {
+  font-weight: 600;
+  padding: 10px 0;
+}
+
+.trending-album .trending-album--list a:hover p {
+  color: #9b4de0;
+}
+
+.trending-album .trending-album--list a p.name-album {
+  font-size: 13px;
+}
+
+@media (min-width: 769px) and (max-width: 768px) {
+  .trending-album .trending-album--list a {
+    width: calc(100% / 4);
+  }
+}
+
+@media (max-width: 768px) {
+  .trending-album .trending-album--list a {
+    width: calc(100% / 2);
+  }
+}

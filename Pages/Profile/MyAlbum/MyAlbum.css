@@ -1,0 +1,95 @@
+/* Album  */
+.list-my--album {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+  min-height: 150px;
+}
+.list-my--album a {
+  text-align: center;
+  position: relative;
+  width: calc(100% / 4);
+  overflow: hidden;
+  padding: 10px;
+  margin: 10px 0;
+  display: block;
+}
+.list-my--album .item-my--album i {
+  display: none;
+  font-size: 50px;
+  position: absolute;
+  top: calc(50% - 55px);
+  left: calc(50% - (50px / 2));
+  z-index: 10;
+}
+
+.list-my--album a li {
+  border-radius: 4px;
+  border: 2px solid #ffffff;
+  overflow: hidden;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.list-my--album a li img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.list-my--album a:hover i {
+  display: inline;
+}
+.list-my--album a:hover li img {
+  transform: scale(1.2);
+  transition: all 0.8s ease-in-out;
+  filter: brightness(0.5);
+}
+
+.list-my--album a p {
+  font-size: 14px;
+}
+
+.list-my--album a p.title-author {
+  font-weight: 600;
+  padding: 10px 0;
+}
+
+.list-my--album a:hover p {
+  color: #9b4de0;
+}
+
+.list-my--album a p.name-author {
+  font-size: 13px;
+}
+
+.list-my--album a.add-album {
+  border: 2px dotted white;
+  position: relative;
+  width: calc((100% / 4) - 20px);
+  min-height: 100px;
+  margin: 20px 10px;
+  background-color: hsla(0, 0%, 100%, 0.2);
+}
+
+.list-my--album a.add-album:hover {
+  background-color: hsla(0, 0%, 100%, 0.3);
+}
+
+.list-my--album a.add-album i {
+  font-size: 50px;
+  position: absolute;
+  top: calc(50% - (50px / 2));
+  left: calc(50% - (50px / 2));
+}
+
+@media (max-width: 768px) {
+  .list-my--album a {
+    width: calc(100% / 2);
+  }
+
+  .list-my--album a.add-album {
+    width: 100%;
+    height: 100px;
+  }
+}

@@ -1,0 +1,35 @@
+/* Slider  */
+.slider-container {
+  overflow: hidden;
+  margin: 0 -20px;
+}
+.slider-container .slick-slide img {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  border-radius: 30px;
+  object-fit: cover;
+}
+
+.slider-container .slider-item {
+  overflow: hidden !important;
+  position: relative;
+  height: 280px;
+}
+
+.slider-container .slick-prev {
+  left: 25px;
+  z-index: 10;
+}
+
+.slider-container .slick-next {
+  right: 38px;
+  z-index: 10;
+}
+
+.slick-next:before,
+.slick-prev:before {
+  font-size: 34px;
+  opacity: 0.75;
+  color: #797979;
+}
